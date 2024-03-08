@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const paypal = require('paypal-rest-sdk');
 const plans = require('./plans.js');
 
