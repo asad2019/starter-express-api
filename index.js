@@ -12,8 +12,6 @@ paypal.configure({
   'client_secret': 'EKX01BI_jwrrM6XGQJmmGNvxOkDm67gafakjlOf7viTvAyjumtSOQMIqrS2Vmvhn7xgR9CCCOy9u6FoC'
 });
 
-app.use(bodyParser.json());
-
 app.get('/subscribe/:planName/:token', async (req, res) => {
   const { planName, token } = req.params;
   if(token=="X01BI_jwrrM6XGQJmmGNvxsRZOv4XmJgYU2gmvhn7xU3C2hy"){
